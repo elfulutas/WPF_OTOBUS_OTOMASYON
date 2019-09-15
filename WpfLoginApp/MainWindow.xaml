@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfLoginApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfLoginApp"
+        mc:Ignorable="d"
+        Title="Login" Height="504" Width="417.6"
+       Background="#FF33648B" Icon="Resimler/home.png" WindowStartupLocation="CenterScreen">
+    <Border Margin="20" Padding="15" Background="#FF363d42" CornerRadius="20">
+        <StackPanel RenderTransformOrigin="0.5,0.5">
+            <Label Content="Login" Foreground="White" FontSize="25" HorizontalContentAlignment="Center"></Label>
+            <Separator Background="White"/>
+
+            <Label Content="Username" Foreground="White" ></Label>
+            <TextBox x:Name="usertxt" Background="#FFB4AEAE" Margin="4" Height="29" />
+            
+            <Label Content="Password" Foreground="White" ></Label>
+            <PasswordBox  x:Name="pswdtxt" Background="#FFB4AEAE" Margin="4" Height="29" />
+
+            <Button Content="Submit" Background="#FFB4AEAE" Foreground="Black" Margin="75 5 75 0"  FontSize="18" Click="Button_Click" Height="35" />
+            <Button Content="SignUp" Background="#FFB4AEAE" Foreground="Black" Margin="75 15 75 0"  FontSize="18" Click="Button_Click_1" Height="33"/>
+
+        </StackPanel>
+    </Border>
+    
+</Window>
